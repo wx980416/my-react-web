@@ -1,11 +1,12 @@
-import React, { Suspense } from 'react' // Suspense 解决路由懒加载问题
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import App from './App'
-import './style/index.css'
-import theme from './style/theme'
+import "normalize.css"
+import './styles/index.css'
+import theme from './styles/theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

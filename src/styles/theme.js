@@ -1,7 +1,6 @@
 const theme = {
-  color: {
-    c1: '#00bc91',
-  },
+  bg: '#ffffff',
+  c1: '#00bc91',
 }
 
 export default theme
