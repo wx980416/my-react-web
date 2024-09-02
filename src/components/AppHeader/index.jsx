@@ -9,13 +9,13 @@ const AppHeader = memo(() => {
   return (
     <AppHeaderWrapper>
       <div className='flex-1'>
-        <img className='w-[40px] h-[40px]' src={logo} alt='' />
+        <img className='w-[40px] h-[40px] cursor-pointer' src={logo} alt='' />
       </div>
       <div className='flex'>
-        <div className='title'>{title}</div>
+        <div className='title cursor-pointer'>{title}</div>
       </div>
       <div className='flex-1 flex justify-end'>
-        <img className='w-[40px] h-[40px] rounded' src={avatar} alt='' />
+        <img className='w-[40px] h-[40px] rounded cursor-pointer' src={avatar} alt='' />
       </div>
     </AppHeaderWrapper>
   )
