@@ -1,13 +1,22 @@
 import React, { memo } from 'react'
 import styled from 'styled-components'
 
-import logo from '@/assets/img/logo.jpg'
+import avatar from '@/assets/img/avatar.jpg'
+import logo from '@/assets/img/logo.png'
+const title = process.env.REACT_APP_TITLE
 
 const AppHeader = memo(() => {
   return (
     <AppHeaderWrapper>
-      <img className='w-[40px] h-[40px] rounded' src={logo} alt='' />
-      <div className='pl-4'>努力挣钱的小鑫的原生 UI 组件库</div>
+      <div className='flex-1'>
+        <img className='w-[40px] h-[40px]' src={logo} alt='' />
+      </div>
+      <div className='flex'>
+        <div className='title'>{title}</div>
+      </div>
+      <div className='flex-1 flex justify-end'>
+        <img className='w-[40px] h-[40px] rounded' src={avatar} alt='' />
+      </div>
     </AppHeaderWrapper>
   )
 })
@@ -16,8 +25,12 @@ export default AppHeader
 
 const AppHeaderWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 50px;
+  padding: 0 16px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  .title {
+    font-size: 30px;
+    color: #333;
+  }
 `

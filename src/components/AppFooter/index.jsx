@@ -7,4 +7,7 @@ const AppFooter = memo(() => {
 
 export default AppFooter
 
-const AppFooterWrapper = styled.div``
+const AppFooterWrapper = styled.div`
+  height: 100px;
+  background-color: black;
+`

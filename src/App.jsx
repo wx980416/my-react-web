@@ -20,12 +20,14 @@ export default App
 
 const AppWrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: ${(props) => props.theme.bg};
   display: flex;
   flex-direction: column;
   .page {
     flex: 1;
     overflow: hidden;
+    padding: 16px;
+    overflow-y: scroll;
   }
 `

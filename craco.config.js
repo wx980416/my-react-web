@@ -3,10 +3,12 @@ const CracoLessPlugin = require('craco-less')
 
 const resolve = (pathname) => path.resolve(__dirname, pathname)
 
+
 module.exports = {
   eslint: {
     enable: false,
   },
+
   plugins: [
     {
       plugin: CracoLessPlugin,
