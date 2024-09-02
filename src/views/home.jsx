@@ -1,7 +1,12 @@
 import React, { memo } from 'react'
+import LeftCard from '../components/LeftCard'
 
 const Home = memo(() => {
-  return <div>Home</div>
+  return (
+    <div>
+      <LeftCard />
+    </div>
+  )
 })
 
 export default Home

@@ -6,10 +6,10 @@ import WebFooter from './components/WebFooter'
 
 const App = memo(() => {
   return (
-    <div>
-      <WebHeader />
-      <div>{useRoutes(routes)}</div>
-      <WebFooter />
+    <div className='app bg-[#f2f5f8]'>
+      {/* <WebHeader /> */}
+      <div className='page'>{useRoutes(routes)}</div>
+      {/* <WebFooter /> */}
     </div>
   )
 })
