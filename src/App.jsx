@@ -24,5 +24,6 @@ const AppWrapper = styled.div`
   flex-direction: column;
   .page {
     flex: 1;
+    padding-top: 50px;
   }
 `

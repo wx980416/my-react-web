@@ -32,10 +32,8 @@ export default Card
 const CardWrapper = styled.div`
   height: 400px;
   overflow: hidden;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #212121;
-  overflow: hidden;
 `

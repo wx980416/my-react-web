@@ -9,7 +9,7 @@ const AppHeader = memo(() => {
   return (
     <AppHeaderWrapper>
       <div className='flex-1'>
-        <img className='w-[40px] h-[40px] cursor-pointer' src={logo} alt='' />
+        <img className='w-auto h-[30px] cursor-pointer' src={logo} alt='' />
       </div>
       <div className='flex'>
         <div className='title cursor-pointer'>{title}</div>
@@ -26,9 +26,14 @@ export default AppHeader
 const AppHeaderWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 100vw;
   height: 50px;
   padding: 0 16px;
   background-color: #171717;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   .title {
     font-size: 30px;
     color: #fff;
