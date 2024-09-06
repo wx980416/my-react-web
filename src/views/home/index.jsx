@@ -17,6 +17,8 @@ const Home = memo(() => {
 export default Home
 
 const HomeWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
 `

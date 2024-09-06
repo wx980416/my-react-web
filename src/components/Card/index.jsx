@@ -18,7 +18,12 @@ const Card = memo((props) => {
   }, [data])
 
   return (
-    <CardWrapper className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4'>
+    <CardWrapper
+      className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4'
+      style={{
+        'background-color': data.theme === 'dark' ? '#212121' : '#e8e8e8',
+      }}
+    >
       <div ref={containerRef}></div>
     </CardWrapper>
   )
@@ -30,10 +35,13 @@ Card.propTypes = {
 
 export default Card
 const CardWrapper = styled.div`
+  width: 100%;
   height: 400px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #212121;
+  border-radius: 10px;
+  cursor: pointer;
 `
